@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Sumur Pompa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Pemesanan Sumur Pompa</h2>
+        <form action="process_order.php" method="POST">
+            <label for="name">Nama Anda:</label>
+            <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+
+            <label for="pump">Pilih Sumur:</label>
+            <select id="pump" name="pump" required>
+                <option value="">-- Pilih Sumur --</option>
+                <option value="Sumur Selatan">Sumur Selatan (Rp30.000/jam)</option>
+                <option value="Sumur Utara">Sumur Utara (Rp50.000/jam)</option>
+                <option value="Sumur Barat">Sumur Barat (Rp50.000/jam)</option>
+            </select>
+
+            <label for="duration">Berapa Lama (Jam):</label>
+            <select id="duration" name="duration" required>
+                <option value="">-- Pilih Durasi --</option>
+                <option value="1">1 Jam</option>
+                <option value="2">2 Jam</option>
+                <option value="3">3 Jam</option>
+                <option value="4">4 Jam</option>
+                <option value="5">5 Jam</option>
+            </select>
+
+            <label for="notes">Catatan Tambahan:</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Tambahkan catatan jika ada..."></textarea>
+
+            <button type="submit">Kirim Pesanan</button>
+        </form>
+        <div class="footer">
+            <p>© 2025 Pemesanan Sumur Pompa</p>
+        </div>
+    </div>
+</body>
+</html>
